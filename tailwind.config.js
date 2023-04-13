@@ -7,7 +7,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      darkBlue: 'var(--bg-blue)'
+      dirtyNeonBlue: 'var(--bg-blue)',
+      darkBlue: 'var(--dark-blue)',
+      neonBlue: 'var(--neon-blue)',
+      white: 'var(--white)',
+      transparent: 'transparent'
     }
   },
   plugins: []
