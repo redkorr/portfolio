@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --bg-blue: rgb(18, 41, 41);
+  --bg-blue: rgb(6, 33, 33);
+  --neon-blue: rgb(50, 232, 232);
+  --dark-blue: rgb(50, 50, 232);
+  --white: rgb(255, 255, 255);
 }
 
 body {
