@@ -6,12 +6,14 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    colors: {
-      dirtyNeonBlue: 'var(--bg-blue)',
-      darkBlue: 'var(--dark-blue)',
-      neonBlue: 'var(--neon-blue)',
-      white: 'var(--white)',
-      transparent: 'transparent'
+    extend: {
+      colors: {
+        dirtyNeonBlue: 'var(--bg-blue)',
+        darkBlue: 'var(--dark-blue)',
+        neonBlue: 'var(--neon-blue)',
+        white: 'var(--white)',
+        transparent: 'transparent'
+      }
     }
   },
   plugins: []
