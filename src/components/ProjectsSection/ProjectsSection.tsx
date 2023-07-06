@@ -1,75 +1,70 @@
-import React from 'react';
-
 import Image from 'next/image';
 
-import CardDetails from '../../../public/interactive_card_details_form.png';
+import useApiGET from '@/hooks/useApiGET';
 
-import GithubProfileApp from '../../../public/github_profile_app.png';
+import { Project } from '../../types';
 
-import NotificationPage from '../../../public/notifications-page-desktop.png';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import Modal from '../Modal/Modal';
 
-const ProjectsSection = () => {
+interface Props {
+  isModalOpen: boolean;
+  setIsModalOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const ProjectsSection = ({ setIsModalOpen, isModalOpen }: Props) => {
+  const projects = useApiGET('/projects');
+
+  const [data, setData] = useState<Array<Project> | undefined>(undefined);
+
+  const [buttonId, setButtonId] = useState<number>(0);
+
+  useEffect(() => {
+    setData(projects);
+  }, [projects]);
+
   return (
     <div>
       <h2 className="text-4xl font-semibold py-11">Projects</h2>
       <div className="flex flex-wrap gap-4">
-        <div className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue w-[49%]">
-          <div className="bg-dirtyNeonBlue p-6 rounded-2xl">
-            <div>
-              <Image
-                src={CardDetails}
-                alt=""
-                className="h-[260px]"
-              />
+        {data?.map((project) => (
+          <div
+            className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue w-[49%]"
+            key={project.id}
+          >
+            <div className="bg-dirtyNeonBlue p-6 rounded-2xl">
               <div>
-                <h3 className="text-2xl py-7 text-center">Interactive card details form</h3>
-              </div>
-              <div className="flex justify-center">
-                <button className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold">
-                  View project
-                </button>
+                <Image
+                  src={`/..${project.projectImage}`}
+                  alt=""
+                  className="h-[260px]"
+                  width={512}
+                  height={260}
+                />
+                <div>
+                  <h3 className="text-2xl py-7 text-center">{project.name}</h3>
+                </div>
+                <div className="flex justify-center">
+                  <button
+                    className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold"
+                    onClick={() => {
+                      setIsModalOpen(true);
+                      setButtonId(project.id);
+                    }}
+                  >
+                    View project
+                  </button>
+                </div>
               </div>
             </div>
+            <Modal
+              buttonId={buttonId}
+              project={project}
+              isModalOpen={isModalOpen}
+              setIsModalOpen={setIsModalOpen}
+            />
           </div>
-        </div>
-        <div className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue w-[49%]">
-          <div className="bg-dirtyNeonBlue p-6 rounded-2xl">
-            <div>
-              <Image
-                src={GithubProfileApp}
-                alt=""
-                className="h-[260px]"
-              />
-              <div>
-                <h3 className="text-2xl py-7 text-center">Github profile app</h3>
-              </div>
-              <div className="flex justify-center">
-                <button className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold">
-                  View project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue w-[49%]">
-          <div className="bg-dirtyNeonBlue p-6 rounded-2xl">
-            <div>
-              <Image
-                src={NotificationPage}
-                alt=""
-                className="h-[260px]"
-              />
-              <div>
-                <h3 className="text-2xl py-7 text-center">Notifiacations page</h3>
-              </div>
-              <div className="flex justify-center">
-                <button className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold">
-                  View project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
