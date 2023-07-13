@@ -1,6 +1,5 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
-import NotificationPage from '../../../public/notifications-page-desktop.png';
 import CloseBtn from '../../../public/close-bold-svgrepo-com.svg';
 import { Project } from '@/types';
 
