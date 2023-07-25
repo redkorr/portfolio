@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className=" w-1/2">
+    <div className=" w-1/2 py-10">
       <div className="mb-5">
         <span className="text-transparent text-6xl font-bold bg-clip-text bg-gradient-to-r from-darkBlue to-neonBlue">
           Hello, I&#39;m Adam,
