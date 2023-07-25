@@ -28,7 +28,10 @@ const ProjectsSection = () => {
   }, [projects]);
 
   return (
-    <div>
+    <div
+      id="ProjectsSection"
+      className="py-10"
+    >
       <h2 className="text-4xl font-semibold py-11">Projects</h2>
       <div className="flex flex-wrap gap-4">
         {data?.map((project) => (
