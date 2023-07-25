@@ -3,7 +3,7 @@ import React from 'react';
 
 const NavigationBar = () => {
   return (
-    <div className="py-10 flex">
+    <div className="flex items-center">
       <div className="text-xl px-8">
         <Link
           href="#ProjectsSection"

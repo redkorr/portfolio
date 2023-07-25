@@ -9,3 +9,7 @@ export { default as Technologies } from './Technologies/Technologies';
 export { default as Skills } from './Skills/Skills';
 
 export { default as NavigationBar } from './NavigationBar/NavigationBar';
+
+export { default as Header } from './Header/Header';
+
+export { default as Links } from './Links/Links';
