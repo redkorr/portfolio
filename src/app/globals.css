@@ -34,15 +34,3 @@ body {
 html {
   scroll-behavior: smooth !important;
 }
-
-.background {
-  border: 2px solid red;
-  z-index: 10;
-  display: flex;
-}
-
-.foreground {
-  border: 2px solid green;
-  z-index: 20;
-  display: flex;
-}
