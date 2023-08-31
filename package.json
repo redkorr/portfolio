@@ -10,6 +10,8 @@
     "server": "json-server -p 4000 --watch db.json"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@hookform/error-message": "^2.0.1",
     "@react-spring/parallax": "^9.7.3",
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
