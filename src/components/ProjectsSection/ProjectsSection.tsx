@@ -36,7 +36,7 @@ const ProjectsSection = () => {
       <div className="flex flex-wrap gap-4">
         {data?.map((project) => (
           <div
-            className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue lg:w-[49%] "
+            className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue lg:w-[49%]"
             key={project.id}
           >
             <div className="bg-dirtyNeonBlue p-6 rounded-2xl">
