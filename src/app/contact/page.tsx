@@ -8,7 +8,7 @@ import { ErrorMessage } from '@hookform/error-message';
 
 import emailjs from '@emailjs/browser';
 
-import { ThankYouState } from './components';
+import { BackButton, ThankYouState } from './components';
 
 type FormValues = {
   firstName: string;
@@ -176,6 +176,7 @@ const Form = () => {
               </div>
             </form>
           </div>
+          <BackButton />
         </>
       )}
     </div>
