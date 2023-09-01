@@ -15,5 +15,3 @@ export { default as Header } from './Header/Header';
 export { default as Links } from './Links/Links';
 
 export { default as Footer } from './Footer/Footer';
-
-export { default as BackgroundAnimation } from './BackgroundAnimation/BackgroundAnimation';
