@@ -1,24 +1,14 @@
-'use client';
-
-import { BackgroundAnimation, Footer, Header, HeroSection, ProjectsSection, Skills, Technologies } from '@/components';
-
-import { Parallax } from '@react-spring/parallax';
+import { Footer, Header, HeroSection, ProjectsSection, Skills, Technologies } from '@/components';
 
 export default function Home() {
   return (
-    <Parallax
-      pages={2.37}
-      style={{ top: '0', left: '0' }}
-    >
-      <main className="mx-auto w-3/5 scroll-smooth">
-        <BackgroundAnimation />
-        <Header />
-        <HeroSection />
-        <ProjectsSection />
-        <Technologies />
-        <Skills />
-        <Footer />
-      </main>
-    </Parallax>
+    <main className="lg:mx-auto lg:w-3/5 scroll-smooth px-8 lg:px-0">
+      <Header />
+      <HeroSection />
+      <ProjectsSection />
+      <Technologies />
+      <Skills />
+      <Footer />
+    </main>
   );
 }
