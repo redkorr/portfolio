@@ -30,13 +30,13 @@ const ProjectsSection = () => {
   return (
     <div
       id="ProjectsSection"
-      className="py-10"
+      className="lg:pt-20 pt-10"
     >
-      <h2 className="text-4xl font-semibold py-11">Projects</h2>
+      <h2 className="text-4xl font-semibold lg:py-11 py-6">Projects</h2>
       <div className="flex flex-wrap gap-4">
         {data?.map((project) => (
           <div
-            className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue w-[49%]"
+            className="p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue lg:w-[49%] "
             key={project.id}
           >
             <div className="bg-dirtyNeonBlue p-6 rounded-2xl">
@@ -44,12 +44,12 @@ const ProjectsSection = () => {
                 <Image
                   src={`/..${project.projectImage}`}
                   alt=""
-                  className="h-[260px]"
+                  className="lg:h-[260px] h-32"
                   width={512}
                   height={260}
                 />
                 <div>
-                  <h3 className="text-2xl py-7 text-center">{project.name}</h3>
+                  <h3 className="lg:text-2xl text-xl lg:py-7 py-4 text-center">{project.name}</h3>
                 </div>
                 <div className="flex justify-center">
                   <button
