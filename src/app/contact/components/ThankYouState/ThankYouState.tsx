@@ -14,7 +14,7 @@ const ThankYouState = () => {
         <p className="text-center mb-5">I will respond as soon as possible.</p>
         <button
           onClick={handleClick}
-          className="w-4/5 rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold mx-auto lg:w-3/5"
+          className="w-4/5 rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold mx-auto lg:w-3/5 shadow-md hover:shadow-lg hover:shadow-blue-500/50 shadow-blue-500/50 active:shadow-none"
         >
           Back to portfolio
         </button>

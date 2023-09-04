@@ -53,7 +53,7 @@ const ProjectsSection = () => {
                 </div>
                 <div className="flex justify-center">
                   <button
-                    className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold"
+                    className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold shadow-md hover:shadow-lg hover:shadow-blue-500/50 shadow-blue-500/50 active:shadow-none"
                     onClick={() => {
                       setIsModalOpen(true);
                       setButtonId(project.id);
