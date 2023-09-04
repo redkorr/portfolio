@@ -5,7 +5,7 @@
       "name": "Interactive card details form",
       "projectImage": "/public/interactive_card_details_form.png",
       "stack": ["typescript", "react"],
-      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestias optio omnis, debitis iste consectetur ratione molestiae id perferendis est mollitia? Omnis qui consectetur ea nihil ducimus aliquid perferendis deserunt, sunt cum voluptate eligendi consequatur nisi porro quas possimus excepturi repudiandae? Animi corrupti et excepturi nisi ipsa voluptatum amet, nostrum facilis dolorum aut voluptas, unde possimus beatae vero exercitationem magnam fuga totam quo odit itaque magni quis quas, ipsam doloribus. Doloribus sapiente velit facere quos numquam qui deleniti. Enim labore soluta deserunt ullam, corporis facere animi sapiente delectus qui voluptates voluptate nihil, perspiciatis quo inventore ipsa cumque recusandae est nulla?",
+      "about": "This is a solution to the Interactive card details form challenge on Frontend Mentor. I created this project to learn more about web design and practise in newly learn typescript.",
       "link": "https://github.com/redkorr/interactive-card-details-form"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Github profile app",
       "projectImage": "/public/github_profile_app.png",
       "stack": ["react", "javascript", "graphql"],
-      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestias optio omnis, debitis iste consectetur ratione molestiae id perferendis est mollitia? Omnis qui consectetur ea nihil ducimus aliquid perferendis deserunt, sunt cum voluptate eligendi consequatur nisi porro quas possimus excepturi repudiandae? Animi corrupti et excepturi nisi ipsa voluptatum amet, nostrum facilis dolorum aut voluptas, unde possimus beatae vero exercitationem magnam fuga totam quo odit itaque magni quis quas, ipsam doloribus. Doloribus sapiente velit facere quos numquam qui deleniti. Enim labore soluta deserunt ullam, corporis facere animi sapiente delectus qui voluptates voluptate nihil, perspiciatis quo inventore ipsa cumque recusandae est nulla?",
+      "about": "I created this project to learn React and how to communicate with API. At first for this project I worked with Github REST API but after a few problem with it a decided to migrate to GitHub GraphQL API. ",
       "link": "https://github.com/redkorr/github-profile-app"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Notifiacations page",
       "projectImage": "/public/notifications-page-desktop.png",
       "stack": ["typescript", "tailwind", "react", "moment.js"],
-      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestias optio omnis, debitis iste consectetur ratione molestiae id perferendis est mollitia? Omnis qui consectetur ea nihil ducimus aliquid perferendis deserunt, sunt cum voluptate eligendi consequatur nisi porro quas possimus excepturi repudiandae? Animi corrupti et excepturi nisi ipsa voluptatum amet, nostrum facilis dolorum aut voluptas, unde possimus beatae vero exercitationem magnam fuga totam quo odit itaque magni quis quas, ipsam doloribus. Doloribus sapiente velit facere quos numquam qui deleniti. Enim labore soluta deserunt ullam, corporis facere animi sapiente delectus qui voluptates voluptate nihil, perspiciatis quo inventore ipsa cumque recusandae est nulla?",
+      "about": "This is a solution to the Interactive card details form challenge on Frontend Mentor. I created this project to learn more about web design and practise more in typescript. To expand knowledge about styling I used Tailwind. To efficiently handle date and time operations I used Moment.js library.",
       "link": "https://github.com/redkorr/notifications-page-main"
     }
   ]
