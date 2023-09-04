@@ -57,11 +57,11 @@ const Modal = ({ isModalOpen, setIsModalOpen, project, buttonId }: Props) => {
                     href={project.link}
                     target="_blank"
                   >
-                    <button className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-2 font-semibold">
+                    <button className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-2 font-semibold shadow-md hover:shadow-lg hover:shadow-blue-500/50 shadow-blue-500/50 active:shadow-none">
                       Code
                     </button>
                   </Link>
-                  <button className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-2 font-semibold">
+                  <button className="rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-2 font-semibold shadow-md hover:shadow-lg hover:shadow-blue-500/50 shadow-blue-500/50 active:shadow-none">
                     Demo
                   </button>
                 </div>

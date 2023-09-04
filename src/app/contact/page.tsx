@@ -171,7 +171,7 @@ const Form = () => {
                 <input
                   type="submit"
                   value="Submit"
-                  className="w-3/5 rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold mx-auto"
+                  className="w-3/5 rounded-3xl bg-gradient-to-r from-darkBlue to-neonBlue px-7 py-3 font-semibold mx-auto shadow-md hover:shadow-lg hover:shadow-blue-500/50 shadow-blue-500/50 active:shadow-none"
                 />
               </div>
             </form>
