@@ -35,7 +35,7 @@ const ProjectsSection = () => {
             <div className="bg-dirtyNeonBlue p-6 rounded-2xl">
               <div>
                 <Image
-                  src={`/..${imagePath}`}
+                  src={`${imagePath.replace('/public', '')}`}
                   alt=""
                   className="lg:h-[260px] h-32"
                   width={512}

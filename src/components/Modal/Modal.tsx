@@ -3,6 +3,7 @@ import Image from 'next/image';
 import CloseBtn from '../../../public/close-bold-svgrepo-com.svg';
 import { Project } from '@/types';
 import Link from 'next/link';
+import { log } from 'console';
 
 interface Props {
   buttonId: number;
@@ -25,11 +26,12 @@ const Modal = ({ isModalOpen, setIsModalOpen, projects, buttonId }: Props) => {
           <div className="lg:w-fit w-11/12 lg:h-fit h-fit m-auto p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue hover:cursor-default">
             <div className="flex flex-col lg:flex-row lg:h-[500px] h-fit mx-auto bg-dirtyNeonBlue p-6 rounded-2xl">
               <Image
-                src={`${currentProject.imagePath}`}
+                src={`${currentProject.imagePath.replace('/public', '')}`}
                 alt=""
                 width={900}
                 height={500}
               />
+
               <div className="p-3 m-auto lg:w-80 w-fit min-h-full flex flex-col justify-between">
                 <div className="flex justify-between items-start">
                   <h1 className="lg:text-2xl text-xl leading-none mb-2">{currentProject.name}</h1>
