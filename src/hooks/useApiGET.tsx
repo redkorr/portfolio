@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react';
 import { Project } from '@/types';
 
 const useApiGET = (path: string): Array<Project> | undefined => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<Array<Project> | undefined>(undefined);
+  const env = process.env.NODE_ENV === 'production' ? `${process.env.NEXT_PUBLIC_VERCEL_URL}` : 'http://localhost:3000';
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`http://localhost:4000${path}`);
-
+        const response = await fetch(`${env}${path}`);
         const json = await response.json();
 
         setData(json);
@@ -19,7 +19,7 @@ const useApiGET = (path: string): Array<Project> | undefined => {
     }
 
     fetchData();
-  }, [path]);
+  }, [env, path]);
 
   return data;
 };
