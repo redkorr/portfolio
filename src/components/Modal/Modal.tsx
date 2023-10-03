@@ -14,8 +14,6 @@ interface Props {
 const Modal = ({ isModalOpen, setIsModalOpen, projects, buttonId }: Props) => {
   const currentProject = projects?.find((project) => project.id === buttonId);
 
-  console.log('current project', currentProject);
-
   const handleClick = () => {
     setIsModalOpen(false);
   };
