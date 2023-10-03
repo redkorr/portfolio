@@ -76,9 +76,7 @@ const Modal = ({ isModalOpen, setIsModalOpen, projects, buttonId }: Props) => {
         </div>
       )}
     </div>
-  ) : (
-    <div>error loading project :c</div>
-  );
+  ) : null;
 };
 
 export default Modal;
