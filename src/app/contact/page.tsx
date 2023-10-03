@@ -25,8 +25,6 @@ const Form = () => {
     formState: { errors: invalid, isSubmitSuccessful }
   } = useForm<FormValues>();
 
-  console.log(invalid);
-
   const sendEmail: SubmitHandler<FormValues> = (formData) => {
     emailjs
       .send(
@@ -40,7 +38,7 @@ const Form = () => {
           console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          console.error(error.text);
         }
       );
   };
