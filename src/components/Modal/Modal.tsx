@@ -25,7 +25,7 @@ const Modal = ({ isModalOpen, setIsModalOpen, projects, buttonId }: Props) => {
           <div className="lg:w-fit w-11/12 lg:h-fit h-fit m-auto p-[1px] rounded-2xl bg-gradient-to-r from-darkBlue to-neonBlue hover:cursor-default">
             <div className="flex flex-col lg:flex-row lg:h-[500px] h-fit mx-auto bg-dirtyNeonBlue p-6 rounded-2xl">
               <Image
-                src={`/..${currentProject.imagePath}`}
+                src={`${currentProject.imagePath}`}
                 alt=""
                 width={900}
                 height={500}
